@@ -19,16 +19,16 @@ function App() {
   return (
     <>
      <h1>Fullstack application</h1>
-     <p>Jokes: {jokes.length}</p>
-
-     {
-      jokes.map((joke,index)=>{
+     <p>Total Jokes: {jokes.length}</p>
+    
+       {
+      jokes.map((joke, index) => (
         <div key={joke.id}>
           <h3>{joke.title}</h3>
-          <p>{joke.contet}</p>
+          <p>{joke.content}</p>
         </div>
-      })
-     }
+      ))
+    }
     </>
   )
 }

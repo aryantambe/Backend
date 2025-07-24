@@ -12,27 +12,27 @@ app.get('/api/jokes',(req,res)=>{
         {
             id:1,
             title:'joke 1',
-            content:'joke 1'
+            content:'hey i am joke 1'
         },
         {
             id:2,
             title:'joke 2',
-            content:'joke 2'
+            content:'hey i am joke 2'
         },
         {
             id:3,
             title:'joke 3',
-            content:'joke 3'
+            content:'hey i am joke 3'
         },
         {
             id:4,
             title:'joke 4',
-            content:'joke 4'
+            content:'hey i am joke 4'
         },
         {
             id:5,
             title:'joke 5',
-            content:'joke 5'
+            content:'hey i am joke 5'
         },
 
     ];
