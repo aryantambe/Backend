@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 
 const subTodoSchema= new mongoose.Schema({
     content:{
@@ -8,6 +8,10 @@ const subTodoSchema= new mongoose.Schema({
     complete:{
         type:Boolean,
         default:false,
+    },
+    createdBy:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'User',
     }
     
 },{timestamps:true})
