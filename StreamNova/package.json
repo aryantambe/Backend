@@ -1,0 +1,17 @@
+{
+  "name": "streamnova",
+  "version": "1.0.0",
+  "description": "mega backend project",
+  "keywords": [
+    "javascript",
+    "backend",
+    "project"
+  ],
+  "license": "ISC",
+  "author": "Aryan Tambe",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
