@@ -1,5 +1,32 @@
-import mongoose from 'mongoose';
-import { DB_NAME } from './constants';
+import dotenv from 'dotenv'
+import connectDB from './db/index.js';
+dotenv.config({
+    path:'./.env'
+});
+   
+
+connectDB();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* THIS IS A WAY TO CONNECT DB TO OUR APP, USING IIFEs, ASYNC AWAIT DIRECLY INSIDE THE INDEX.JS FILE
 
