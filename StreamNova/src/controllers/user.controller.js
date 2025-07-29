@@ -40,7 +40,14 @@ const registerUser=asyncHandler(async (req,res)=>{
 
      //middleware adds more fields in the req object (multer added files)
      const avatarLocalPath=req.files?.avatar[0]?.path;
-     const coverImageLocalPath=req.files?.coverImage[0]?.path;
+    // const coverImageLocalPath=req.files?.coverImage[0]?.path; --> causing errors so we check manually using classic if-else
+      let coverImageLocalPath;
+    if (req.files && Array.isArray(req.files.coverImage) && req.files.coverImage.length > 0) {
+        coverImageLocalPath = req.files.coverImage[0].path
+    }
+
+     console.log("Avatar path:", req.files?.avatar?.[0]?.path);
+
 
      if(!avatarLocalPath){
           throw new ApiError(400,"Avatar file is required")
