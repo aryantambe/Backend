@@ -1,4 +1,5 @@
 Learning how backend is handled professionally.
+The repo also contains some skeleton code and some crash course notes for revision.
 
 
 # 📦 StreamNova Project
